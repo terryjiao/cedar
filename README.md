@@ -71,6 +71,8 @@ npm run test:package
 
 架构与边界见 [architecture](docs/architecture.md)，本地开发和版本发布见 [development](docs/development.md)。
 
+后续功能见 [产品路线图](docs/roadmap.md)；当前要推进的工作见 [下一里程碑](docs/next-milestone.md)；已完成内容与验证依据见 [开发进度](docs/progress.md)。
+
 ## 许可证
 
 [MIT](LICENSE)
