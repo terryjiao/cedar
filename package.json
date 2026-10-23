@@ -1,0 +1,22 @@
+{
+  "name": "@terryjiao/cedar",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Evidence-backed onboarding for agent experiments",
+  "repository": { "type": "git", "url": "https://github.com/terryjiao/cedar.git" },
+  "homepage": "https://github.com/terryjiao/cedar#readme",
+  "type": "module",
+  "bin": { "cedar": "dist/src/cli.js" },
+  "files": ["dist/src/*.js", "skills/cedar-onboard/SKILL.md"],
+  "engines": { "node": ">=22.19.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test:package": "npm run build && node scripts/smoke-package.mjs",
+    "cedar": "node dist/src/cli.js"
+  },
+  "dependencies": { "zod": "4.6.7" },
+  "devDependencies": { "@types/node": "22.20.5", "typescript": "5.9.3" }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.cedar/
+.superpowers/
+*.tgz
+.env
+.env.*
